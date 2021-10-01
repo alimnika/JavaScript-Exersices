@@ -174,3 +174,19 @@ const isGreaterThan = (num1, num2) =>{
   return result;
 }
 isGreaterThan(11, 10)
+
+//  EX #11
+// isEqualTo
+// Write a function called "isEqualTo".
+// Given 2 numbers, "isEqualTo" returns whether num2 is equal to num1.
+
+// var output = isEqualTo(11, 10);
+// console.log(output); // --> false
+
+const isEqualTo = (num1, num2) => {
+  let result = num2 = num1 ? true : false;
+  return result;
+}
+isEqualTo(11, 10);
+
+// Ex #12
