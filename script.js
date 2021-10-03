@@ -179,7 +179,6 @@ isGreaterThan(11, 10)
 // isEqualTo
 // Write a function called "isEqualTo".
 // Given 2 numbers, "isEqualTo" returns whether num2 is equal to num1.
-
 // var output = isEqualTo(11, 10);
 // console.log(output); // --> false
 
@@ -190,3 +189,53 @@ const isEqualTo = (num1, num2) => {
 isEqualTo(11, 10);
 
 // Ex #12
+// setting-and-swapping
+// Set num to 50. Set name to "seytech". Now swap num into name.
+
+function settingAndSwapping( num, name){
+  let swap = num;
+   num = name
+  console.log(swap, num)
+}
+ settingAndSwapping(50, "seytech");
+
+//  EX #13
+ //  EX #13
+//  sOldEnoughToDrink
+// Write a function called "isOldEnoughToDrink".
+// Given a number, in this case an age, "isOldEnoughToDrink" returns whether a person of this given age is old enough to legally drink in the United States.
+// Notes:* The legal drinking age in the United States is 21.
+// var output = isOldEnoughToDrink(22);
+// console.log(output); // --> true;
+
+const isOldEnoughToDrink = age =>{
+  let result = age > 21 ? true : false;
+  return result;
+}
+isOldEnoughToDrink(22);
+
+// EX #14
+// isOldEnoughToDrive
+// Write a function called "isOldEnoughToDrive".
+// Given a number, in this case an age, "isOldEnoughToDrive" returns whether a person of this given age is old enough to legally drive in the United States.
+// Notes:* The legal driving age in the United States is 16.
+// var output = isOldEnoughToDrive(22);
+// console.log(output); // --> true
+
+const isOldEnoughToDrive = age =>{
+  return age >  16 ? true : false;
+}
+isOldEnoughToDrive(22)
+
+// EX #15
+// isOldEnoughToVote
+// Write a function called "isOldEnoughToVote".
+// Given a number, in this case an age, 'isOldEnoughToVote' returns whether a person of this given age is old enough to legally vote in the United States.
+// Notes:* The legal voting age in the United States is 18.
+// var output = isOldEnoughToVote(22);
+// console.log(output); // --> true;
+
+const isOldEnoughToVote = age => {
+  return age  > 18 ? true : false;
+}
+isOldEnoughToVote(22);
