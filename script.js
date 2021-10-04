@@ -239,3 +239,68 @@ const isOldEnoughToVote = age => {
   return age  > 18 ? true : false;
 }
 isOldEnoughToVote(22);
+
+// EX #16
+// isOldEnoughToDrinkAndDrive
+// Write a function called "isOldEnoughToDrinkAndDrive".
+// Given a number, in this case an age, "isOldEnoughToDrinkAndDrive" returns whether a person of this given age is old enough to legally drink and drive in the United States.
+
+// Notes:* The legal drinking age in the United States is 21.* It is always illegal to drink and drive in the United States.
+
+const isOldEnoughToDrinkAndDrive = (num, age)=>{
+  return age >21 && age > 16 ? true : false;
+}
+isOldEnoughToDrinkAndDrive(22);
+
+// EX #17
+// Printing-Integers-While-notest
+// Printing Integers with for loop.
+// Print integers from 1000 to 3450.
+let num1 = 1000;
+let num2 = 3450;
+for(let i =num1; i< num2; i++){
+  console.log(i)
+}
+
+// EX #18 
+// print-30-to-750-notest
+// Print numbers from -50 to 350.
+// Hint:* You can use for or while loop.
+
+let num =-50;
+while(num < 350){
+  console.log(num)
+  num+=1
+}
+
+// EX #19
+// Multiples-of-Three-notest
+// Multiples of Three — but Not All
+// Using FOR, print multiples of 3 from -400 to 0. Skip -3 and -6.
+function multiplesOfThree(num){
+  for(let i=num; i<0; i++){
+    if(i % 3=== 0){
+    if (i !==-3 && i !==-6){
+      console.log(i)
+    }
+  }
+}
+}
+multiplesOfThree(-400);
+
+// Ex #20
+// Print-and-Count-notest
+// Print and Count
+// Print all integer multiples of 5. from 512 to 4096, Afterward, also log how many there were.
+
+function printAndCount(num){
+  let count =0;
+  for(let i = 512; i<4096; i++){
+    if(i % 5 === 0){
+      console.log(i);
+      count ++;
+    }
+  }
+  return count;
+}
+printAndCount(5);
